@@ -1,9 +1,42 @@
 h1 {
-  color: red;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
+.custom-container {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
 header {
-  background-image: url(“../images/natural.jpg”);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/natural.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px;
+  text-align: center;
+  color: white;
+}
+
+header h3 {
+  font-size: 18px;
+  line-height: 10px;
+  font-weight: 700;
+}
+
+header h2 {
+  font-size: 24px;
+  line-height: 10px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.header-button {
+  background: white;
+  padding: 10px 20px;
+  color: black;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  initial-letter: 3pc;
 }
