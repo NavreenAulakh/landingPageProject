@@ -1,3 +1,7 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -18,6 +22,32 @@ header {
   color: white;
 }
 
+footer {
+  padding: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/natural.jpg");
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 2s ease-in-out;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: green;
+  text-decoration: none;
+}
+
 header h3 {
   font-size: 18px;
   line-height: 10px;
@@ -29,6 +59,16 @@ header h2 {
   line-height: 10px;
   margin-bottom: 30px;
   font-weight: 300;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.box {
+  margin: 20px;
+  padding: 10px;
 }
 
 .header-button {
