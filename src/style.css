@@ -14,7 +14,7 @@ h1 {
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/natural.jpg");
+    url("../images/montreal-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px;
@@ -25,7 +25,7 @@ header {
 footer {
   padding: 40px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/natural.jpg");
+    url("../images/montreal-header.jpg");
   background-repeat: none;
   background-size: cover;
   color: white;
@@ -61,6 +61,56 @@ header h2 {
   font-weight: 300;
 }
 
+section h2 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+section h3 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 5px;
+  text-align: left;
+  color: grey;
+}
+
+section {
+  padding: 60px;
+}
+
+section .secondary {
+  background: lightgray;
+}
+p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+card {
+  background: white;
+  border-color: white;
+}
+
+.grid-2-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
 .boxes {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -79,4 +129,31 @@ header h2 {
   font-size: 12px;
   font-weight: 700;
   initial-letter: 3pc;
+}
+
+.main-image {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.learn-more {
+  width: 306px;
+  left: 32px;
+  top: 24px;
+  border-radius: 0px;
+  padding: 16px 32px 16px 32px;
+  background: orange;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .grid-2-column {
+    grid-template-columns: 1fr;
+  }
+
+  .main-image {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
