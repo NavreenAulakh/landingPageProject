@@ -7,11 +7,6 @@ h1 {
   font-weight: 600;
 }
 
-.custom-container {
-  max-width: 1400px;
-  margin-right: auto;
-  margin-left: auto;
-}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/montreal-header.jpg");
@@ -22,10 +17,15 @@ header {
   color: white;
 }
 
+header a:hover {
+  text-decoration: none;
+  color: #cb6015;
+}
+
 footer {
   padding: 40px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/montreal-header.jpg");
+    url("../images/footer.jpeg");
   background-repeat: none;
   background-size: cover;
   color: white;
@@ -84,9 +84,6 @@ section {
   padding: 60px;
 }
 
-section .secondary {
-  background: lightgray;
-}
 p {
   font-family: Poppins;
   font-size: 16px;
@@ -96,9 +93,36 @@ p {
   text-align: left;
 }
 
-card {
-  background: white;
-  border-color: white;
+h4,
+h5 {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.secondary {
+  background: lightgray;
+}
+
+.card {
+  padding: 15px;
+}
+
+.card a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.custom-container {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/2;
 }
 
 .grid-2-column {
@@ -136,15 +160,25 @@ card {
   margin: 0 auto;
 }
 
+.img-responsive {
+  width: 100%;
+}
+
 .learn-more {
-  width: 306px;
-  left: 32px;
-  top: 24px;
+  width: 80%;
   border-radius: 0px;
   padding: 16px 32px 16px 32px;
-  background: orange;
+  background: #cb6015;
   margin: 0 auto;
   text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
 }
 
 @media (max-width: 900px) {
@@ -155,5 +189,16 @@ card {
   .main-image {
     margin: 0 auto;
     margin-bottom: 20px;
+  }
+
+  .img-responsive {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 1/1;
+  }
+  .grid-3-columns {
+    grid-template-columns: 1fr;
   }
 }
