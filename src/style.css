@@ -201,4 +201,8 @@ h5 {
   .grid-3-columns {
     grid-template-columns: 1fr;
   }
+
+  .box {
+    font-size: 9px;
+  }
 }
